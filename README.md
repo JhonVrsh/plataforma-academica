@@ -19,7 +19,7 @@ colaborativo con Git y GitHub: repositorio, ramas, commits, push, pull request, 
 |---|--------|------------------|
 | 1 | Carlos Acuña | README, estructura HTML inicial y apertura del flujo |
 | 2 | _Nombre integrante 2_ | Estilos del proyecto (`style.css`) |
-| 3 | _Nombre integrante 3_ | Interactividad (`script.js`), pull request y revisión |
+| 3 | Jhon Jairo Bernal Ortega | Interactividad (`script.js`), pull request y revisión |
 
 ## Estructura del proyecto
 
