@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plataforma Académica Básica</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="encabezado">
+    <h1>Plataforma Académica</h1>
+    <nav>
+      <ul class="menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#cursos">Cursos</a></li>
+        <li><a href="#calificaciones">Calificaciones</a></li>
+        <li><a href="#anuncios">Anuncios</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="seccion">
+      <h2>Bienvenido</h2>
+      <p id="saludo">Consulta tus cursos, calificaciones y anuncios en un solo lugar.</p>
+    </section>
+
+    <section id="cursos" class="seccion">
+      <h2>Mis cursos</h2>
+      <div class="tarjetas">
+        <article class="tarjeta">
+          <h3>Ingeniería de Software III</h3>
+          <p>Docente: Andrés Rivera</p>
+        </article>
+        <article class="tarjeta">
+          <h3>Bases de Datos</h3>
+          <p>Docente: Por asignar</p>
+        </article>
+        <article class="tarjeta">
+          <h3>Programación Web</h3>
+          <p>Docente: Por asignar</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="calificaciones" class="seccion">
+      <h2>Calificaciones</h2>
+      <table class="tabla">
+        <thead>
+          <tr>
+            <th>Curso</th>
+            <th>Corte 1</th>
+            <th>Corte 2</th>
+            <th>Corte 3</th>
+            <th>Promedio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ingeniería de Software III</td>
+            <td>4.2</td>
+            <td>4.5</td>
+            <td>4.0</td>
+            <td class="promedio"></td>
+          </tr>
+          <tr>
+            <td>Bases de Datos</td>
+            <td>3.8</td>
+            <td>4.1</td>
+            <td>3.5</td>
+            <td class="promedio"></td>
+          </tr>
+          <tr>
+            <td>Programación Web</td>
+            <td>4.7</td>
+            <td>4.3</td>
+            <td>4.8</td>
+            <td class="promedio"></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="anuncios" class="seccion">
+      <h2>Anuncios</h2>
+      <ul class="anuncios">
+        <li>Entrega del taller de Git y GitHub esta semana.</li>
+        <li>Inscripciones para el próximo semestre abiertas.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>Plataforma Académica Básica &middot; Ingeniería de Software III</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
