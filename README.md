@@ -18,7 +18,7 @@ colaborativo con Git y GitHub: repositorio, ramas, commits, push, pull request, 
 | # | Nombre | Rol en el taller |
 |---|--------|------------------|
 | 1 | Carlos Acuña | README, estructura HTML inicial y apertura del flujo |
-| 2 | _Nombre integrante 2_ | Estilos del proyecto (`style.css`) |
+| 2 | Jhon Jairo Bernal Ortega | Estilos del proyecto (`style.css`) |
 | 3 | _Nombre integrante 3_ | Interactividad (`script.js`), pull request y revisión |
 
 ## Estructura del proyecto
