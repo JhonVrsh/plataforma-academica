@@ -1,0 +1,126 @@
+:root {
+  --color-primario: #1e3a8a;
+  --color-secundario: #3b82f6;
+  --color-fondo: #f3f4f6;
+  --color-texto: #1f2937;
+  --color-blanco: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.6;
+}
+
+/* Encabezado y menú */
+.encabezado {
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  color: var(--color-blanco);
+  text-decoration: none;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+/* Secciones */
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.seccion {
+  background-color: var(--color-blanco);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.seccion h2 {
+  color: var(--color-primario);
+  margin-bottom: 1rem;
+}
+
+/* Tarjetas de cursos */
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.tarjeta {
+  border-left: 4px solid var(--color-secundario);
+  background-color: var(--color-fondo);
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+/* Tabla de calificaciones */
+.tabla {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabla th,
+.tabla td {
+  padding: 0.6rem;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.tabla th {
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+}
+
+.promedio {
+  font-weight: bold;
+}
+
+.aprobado {
+  color: #15803d;
+}
+
+.reprobado {
+  color: #b91c1c;
+}
+
+/* Anuncios */
+.anuncios {
+  padding-left: 1.2rem;
+}
+
+/* Pie de página */
+.pie {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+  margin-top: 2rem;
+}
