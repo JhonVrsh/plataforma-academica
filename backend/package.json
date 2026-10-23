@@ -1,0 +1,22 @@
+{
+  "name": "plataforma-academica-backend",
+  "version": "1.0.0",
+  "description": "API REST por capas (Express + SQLite) para la gestión de calificaciones de la Plataforma Académica",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "keywords": [],
+  "author": "Carlos Acuña, Jhonathan Martinez Daza, Jhon Jairo Bernal Ortega",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "sqlite3": "^6.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
