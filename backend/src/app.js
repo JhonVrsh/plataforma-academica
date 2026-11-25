@@ -8,7 +8,18 @@ const calificacionRoutes = require('./routes/calificacion.routes');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.use(cors());
+// CORS: solo el frontend (que corre en otro puerto) puede consumir la API desde el navegador.
+// Se pueden indicar varios orígenes separados por comas en la variable CORS_ORIGIN.
+const ORIGENES_PERMITIDOS = (process.env.CORS_ORIGIN || 'http://localhost:5173')
+  .split(',')
+  .map((origen) => origen.trim())
+  .filter(Boolean);
+
+app.use(cors({
+  origin: ORIGENES_PERMITIDOS,
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type'],
+}));
 app.use(express.json());
 
 app.get('/api/health', (req, res) => res.json({ estado: 'ok' }));
